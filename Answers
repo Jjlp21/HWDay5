@@ -1,0 +1,139 @@
+------------------------------TASK-DAY-5-------------------------------
+-----------------------------------------------------------------------
+
+// Q1 Do the below programs in anonymous function & IIFE
+//  a) Print odd numbers in an array
+
+(function (){
+    var s=""
+    var a=[1,2,3,4,5,6,7,8,9];
+ for(i=0;i<a.length;i++) 
+     if(a[i]%2==1){
+
+         // odd numbers falls into s
+         var s=s+a[i]
+     }
+     
+     // putting odd numbers into array
+     s=s.split("")
+     
+     //coverting string into numbers
+     console.log(s.map(Number))
+})();
+
+// Output: [1,3,5,7,9]
+------------------------------------------------------------------------
+//  b) Convert all the strings to title caps in a string array
+
+
+(function (){
+  var a = ["haa","faa","saa"]
+   for(i=0;i<a.length;i++)
+ {
+    b=a[i].charAt(0).toUpperCase()+a[i].slice(1)
+    a[i]=b 
+}
+console.log(a)
+})();
+
+// Output: ["Haa","Faa","Saa"]
+-------------------------------------------------------------------------
+//  c) Sum of all numbers in an array
+
+(function (){
+    var s=0;
+    var a=[1,2,3,4,5,6,7,8,9];
+ for(i=0;i<a.length;i++) 
+ s=s+a[i];
+     console.log(s)
+})();
+
+// Output: 45
+-------------------------------------------------------------------------
+// d) Return all the prime numbers in an array
+
+
+
+
+-------------------------------------------------------------------------
+// e) Return all the palindromes in an array
+
+
+
+-------------------------------------------------------------------------
+// f) Return median of two sorted arrays of same size
+
+
+
+-------------------------------------------------------------------------
+// g) Remove duplicates from an array
+
+
+
+-------------------------------------------------------------------------
+// h) Rotate an array by k times
+
+
+
+-------------------------------------------------------------------------
+// Q3 Do the below programs in arrow functions.
+//  a) Print odd numbers in an array.
+
+( ()=>{
+    var s=""
+    var a=[1,2,3,4,5,6,7,8,9];
+ for(i=0;i<a.length;i++) 
+     if(a[i]%2==1){
+
+         // odd numbers falls into s
+         var s=s+a[i]
+     }
+     
+     // putting odd numbers into array
+     s=s.split("")
+     
+     //coverting string into numbers
+     console.log(s.map(Number))
+})();
+
+// Output: [1,3,5,7,9]
+------------------------------------------------------------------------
+//  b) Convert all the strings to title caps in a string array
+
+(()=>{
+  var a = ["haa","faa","saa"]
+   for(i=0;i<a.length;i++)
+ {
+    b=a[i].charAt(0).toUpperCase()+a[i].slice(1)
+    a[i]=b 
+}
+console.log(a)
+})();
+
+// Output: ["Haa","Faa","Saa"]
+-------------------------------------------------------------------------
+//  c) Sum of all numbers in an array
+
+(()=>{
+    var s=0;
+    var a=[1,2,3,4,5,6,7,8,9];
+ for(i=0;i<a.length;i++) 
+ s=s+a[i];
+     console.log(s)
+})();
+
+// Output: 45
+-------------------------------------------------------------------------
+//  d) Return all the prime numbers in an array
+
+
+
+
+-------------------------------------------------------------------------
+//  e) Return all the palindromes in an array
+
+
+
+
+-------------------------------------------------------------------------
+----------------------------------end------------------------------------
