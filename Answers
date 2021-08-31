@@ -25,7 +25,6 @@
 ------------------------------------------------------------------------
 //  b) Convert all the strings to title caps in a string array
 
-
 (function (){
   var a = ["haa","faa","saa"]
    for(i=0;i<a.length;i++)
@@ -69,7 +68,16 @@ console.log(a)
 // g) Remove duplicates from an array
 
 
+( function(){
+    var a=[1,8,3,3,5,1,8,5,8];
 
+     // ...new Set() puts unique elements of array a into new array
+     // and assigns it to var a itself.
+
+      a=[...new Set(a)];
+       console.log(a);
+})();
+// Output: [1,8,3,5]
 -------------------------------------------------------------------------
 // h) Rotate an array by k times
 
