@@ -111,8 +111,20 @@ console.log(a)
 -------------------------------------------------------------------------
 // h) Rotate an array by k times
 
+( function()
+ { let k=3
+    let a=[1,2,3,4,5,6];
+   for(i=0;i<k;i++)
+   {
+     b=a[i];
+     a.push(b); 
+   }
+   a=a.splice(k,a.length);
+   console.log(a) 
+ }
+)();
 
-
+// Output: [4,5,6,1,2,3]
 -------------------------------------------------------------------------
 // Q3 Do the below programs in arrow functions.
 //  a) Print odd numbers in an array.
