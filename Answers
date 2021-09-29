@@ -51,14 +51,49 @@ console.log(a)
 -------------------------------------------------------------------------
 // d) Return all the prime numbers in an array
 
+var prime = function (number) {
+       if (number <= 1) {
+           return false;
+        }else {
+            for (let i = 2; i < number; i++) {
+                if (number % i === 0) {
+                    return false;
+                }
 
+            }
+    return number;
+       }
+   };
 
-
+   var n=[2,3,4,5,6,7,8,9,10,11];
+   var isprime, s="";
+   for(let i=0;i<n.length;i++){
+       isprime=prime(n[i]);
+       if(isprime){
+           s+=isprime+" ";
+       }
+   }
+   console.log(s);
+   
+// output: 2 3 5 7 11 
 -------------------------------------------------------------------------
 // e) Return all the palindromes in an array
 
+checkPalindrome= function() {
+    const len = string.length;
+    for (let i = 0; i < len / 2; i++) {
+        if (string[i] !== string[len - 1 - i]) {
+            return 'It is not a palindrome';
+          }
+      }
+        return 'It is a palindrome';
+  };
 
+ let string = "madam";
+ let value = checkPalindrome(string);
+ console.log(value);
 
+ // output: It is a palindrome
 -------------------------------------------------------------------------
 // f) Return median of two sorted arrays of same size
 
@@ -175,14 +210,51 @@ console.log(a)
 -------------------------------------------------------------------------
 //  d) Return all the prime numbers in an array
 
+var prime = (number) =>  {
+    if (number <= 1) {
+        return false;
+     }else {
+         for (let i = 2; i < number; i++) {
+             if (number % i === 0) {
+                 return false;
+             }
+           }
+ return number;
+    }
+};
+
+var n=[2,3,4,5];
+var isprime, s="";
+for(let i=0;i<n.length;i++){
+    isprime=prime(n[i]);
+    if(isprime){
+        s+=isprime+" ";
+    }
+}
+console.log(s);
+
+//output: 2 3 5 
 
 
 
 -------------------------------------------------------------------------
 //  e) Return all the palindromes in an array
 
+checkPalindrome= ()=> {
+    const len = string.length;
+    for (let i = 0; i < len / 2; i++) {
+        if (string[i] !== string[len - 1 - i]) {
+            return 'It is not a palindrome';
+          }
+      }
+        return 'It is a palindrome';
+  };
 
+ let string = "madama";
+ let value = checkPalindrome(string);
+ console.log(value);
 
+ // output: It is a palindrome
 
 -------------------------------------------------------------------------
 ----------------------------------end------------------------------------
